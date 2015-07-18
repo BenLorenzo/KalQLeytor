@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CalQLeytor.iml" filepath="$PROJECT_DIR$/CalQLeytor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KalQLeytor.iml" filepath="$PROJECT_DIR$/KalQLeytor.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
