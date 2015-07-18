@@ -1,0 +1,54 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.android3project.dev.mycal.View.ResultActivity">
+
+    <TextView
+        android:id="@+id/tvFirstNumber"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Operand"
+        android:textSize="@dimen/result_text_size" />
+
+    <TextView
+        android:id="@+id/tvOperator"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Operator"
+        android:textSize="@dimen/result_text_size" />
+
+    <TextView
+        android:id="@+id/tvSecondNumber"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Operand"
+        android:textSize="@dimen/result_text_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#FF0000FF" />
+
+    <TextView
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="@dimen/result_text_size" />
+
+</GridLayout>
