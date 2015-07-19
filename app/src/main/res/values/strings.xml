@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CalQLeytor</string>
+    <string name="app_name">KalQLeytor</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -10,4 +10,6 @@
     <string name="divide">/</string>
     <string name="cancel">C</string>
     <string name="exit">EXIT</string>
+    <string name="first_number_hint">Unang Numero</string>
+    <string name="second_number_hint">Ikaduhang Numero</string>
 </resources>

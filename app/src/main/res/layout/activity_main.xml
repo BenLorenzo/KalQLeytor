@@ -18,7 +18,7 @@
             android:id="@+id/edtFirstNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Unang Numero"
+            android:hint="@string/first_number_hint"
             android:singleLine="true"
             app:met_floatingLabel="highlight" />
 
@@ -33,7 +33,7 @@
             android:id="@+id/edtSecondNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ikaduhang Numero"
+            android:hint="@string/second_number_hint"
             android:singleLine="true"
             app:met_floatingLabel="highlight" />
     </android.support.design.widget.TextInputLayout>
@@ -56,21 +56,39 @@
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/btnAdd"
+                <com.andexert.library.RippleView
+                    rv_centered="true"
+                    android:layout_margin="2dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/plus"
-                    android:textSize="@dimen/operator_text_size" />
+                    app:rv_color="@color/primaryColorLight">
 
-                <Button
-                    android:id="@+id/btnMinus"
+                    <Button
+                        android:background="@color/primaryColor"
+                        android:id="@+id/btnAdd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/plus"
+                        android:textSize="@dimen/operator_text_size" />
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    rv_centered="true"
+                    android:layout_margin="2dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/minus"
-                    android:textSize="@dimen/operator_text_size" />
+                    app:rv_color="@color/primaryColorLight">
+
+                    <Button
+                        android:background="@color/primaryColor"
+                        android:id="@+id/btnMinus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/minus"
+                        android:textSize="@dimen/operator_text_size" />
+                </com.andexert.library.RippleView>
 
             </LinearLayout>
 
@@ -80,41 +98,77 @@
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/btnMultiply"
+                <com.andexert.library.RippleView
+                    rv_centered="true"
+                    android:layout_margin="2dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/multiply"
-                    android:textSize="@dimen/operator_text_size" />
+                    app:rv_color="@color/primaryColorLight">
 
-                <Button
-                    android:id="@+id/btnDivide"
+                    <Button
+                        android:background="@color/primaryColor"
+                        android:id="@+id/btnMultiply"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/multiply"
+                        android:textSize="@dimen/operator_text_size" />
+                </com.andexert.library.RippleView>
+
+                <com.andexert.library.RippleView
+                    rv_centered="true"
+                    android:layout_margin="2dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/divide"
-                    android:textSize="@dimen/operator_text_size" />
+                    app:rv_color="@color/primaryColorLight">
+
+                    <Button
+                        android:background="@color/primaryColor"
+                        android:id="@+id/btnDivide"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/divide"
+                        android:textSize="@dimen/operator_text_size" />
+                </com.andexert.library.RippleView>
 
             </LinearLayout>
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btnCancel"
+        <com.andexert.library.RippleView
+            rv_centered="true"
+            android:layout_margin="2dp"
             android:layout_width="500dp"
             android:layout_height="match_parent"
             android:layout_weight="4"
-            android:text="@string/cancel"
-            android:textSize="@dimen/cancel_text_size"
-            android:textStyle="bold" />
+            app:rv_color="@color/primaryColorLight">
+
+            <Button
+                android:background="@color/primaryColor"
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/cancel"
+                android:textSize="@dimen/cancel_text_size"
+                android:textStyle="bold" />
+        </com.andexert.library.RippleView>
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnExit"
+    <com.andexert.library.RippleView
+        rv_centered="true"
+        android:layout_margin="2dp"
         android:layout_width="match_parent"
         android:layout_height="@dimen/exit_button_height"
-        android:text="@string/exit"
-        android:textSize="@dimen/exit_text_size" />
+        app:rv_color="@color/primaryColorLight">
+
+        <Button
+            android:background="@color/primaryColor"
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/exit"
+            android:textSize="@dimen/exit_text_size" />
+    </com.andexert.library.RippleView>
 
 </GridLayout>
